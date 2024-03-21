@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Booki</title>
+    <!--====== REQUIRED META TAG ======-->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1, shrink-to-fit=no" />
+    <meta name="author" content="Parkway" />
+    <meta name="description" content="HTML Website" />
+    <meta name="keywords" content="HTML, CSS" />
+
+    <!-- link shortcut icon -->
+    <link rel="shortcut icon" href="assets/images/logo/favicon.png" />
+
+    <!--====== CSS FILES ======-->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+    <!-- link fontawesom cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <!--link style css-->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <!-- link responsive css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css" />
+</head>
+
+<body>
+    <!-- TODO 
+            1) Continuer a préparer la soutenance 
+            2) Hormis le logo book + imqges des cartes, toutes les images c'est font-awesome
+            3) Faire attention indentation
+            4) header (navigation, title, form, filtres, informations)
+
+            HEADER
+                - NAV
+                - TITLE
+                - FORM
+                - FILTRES
+                - INFORMATIONS (Plus de 500 logements...)
+
+            MAIN
+                - DIV
+                    - SECTION HEBERGEMENTS
+                    - SECTION POPULAIRES
+
+                - SECTION ACTIVITES
+
+            FOOTER
+
+            5) Dans le CSS TOUS EST CLASSES
+            6) Utiliser variables pour les couleurs
+            7) Pas de !important dans css 
+
+            --- En bonus /:
+            - commencer les cours javascript (grafikart)
+     -->
+
+
+
+
+    <!-- Start Header Area  -->
+    <header class="header-area">
+        <div class="container">
+
+            <div class="header-content">
+                <div class="header-logo-content">
+                    <div class="header-logo">
+                        <a href="/">
+                            <img src="assets/images/logo/logo.png" alt="Logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="header-menu-content">
+                    <nav class="header-nav-menu">
+                        <ul>
+                            <li class="active">
+                                <a href="#hebergements">Hébergements</a>
+                            </li>
+                            <li>
+                                <a href="#activites">Activités</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="dream-accommodation-content">
+
+                <!-- dream heading text  -->
+                <div class="dream-accommodation-heading-text">
+                    <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                    <p>En plein centre-ville ou en pleine nature</p>
+                </div>
+                <!-- dream heading text  -->
+
+                <!-- dream accommodation research  -->
+                <div class="dream-accommodation-research">
+                    <form action="">
+                        <div class="location-icon-content">
+                            <i class="fa-solid fa-location-dot" style="color: #010204;"></i>
+                        </div>
+                        <div class="location-input-field">
+                            <input type="text" value="Marseille, France">
+                        </div>
+                        <div class="research-submit-button">
+                            <input type="submit" value="Rechercher">
+                            <button>
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+
+                            <!--
+                                <button class="reseach-submit-button">
+                                    <span class="computer">Rechercher</span>
+                                    <span class="responsive">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </span>                                    
+                                </button>    
+                            -->
+                        </div>
+                    </form>
+                </div>
+                <!-- dream accommodation research  -->
+
+                <!-- dream accommodation filters  -->
+                <div class="dream-accommodation-filters">
+                    <div class="dream-accommodation-filters-text">
+                        <p>Filtres</p>
+                    </div>
+                    <div class="dream-accommodation-filters-btn">
+                        <button>
+                            <i class="fa-solid fa-money-bill-wave"  style="color: #0065FC;"> </i> <alt="Icon">&nbsp; Economique </alt>
+                        </button>
+                        <button>
+                            <i class="fa-solid fa-person" style="color: #0065FC;"></i> <alt="Icon">&nbsp; Familial </alt>
+                        </button>
+                        <button>
+                            <i class="fa-solid fa-heart" style="color: #0065FC;"></i> <alt="icon">&nbsp; Romantique </alt>
+                        </button>
+                        <button>
+                            <i class="fa-solid fa-fire" style="color: #0065FC;"></i> <alt="Icon">&nbsp; Nos Pepites </alt>
+                        </button>
+                    </div>
+                </div>
+                <!-- dream accommodation filters  -->
+
+                <!-- dream accommodation more then text Problem avec Icone Info -->
+                <div class="dream-accommodation-more-then-text">
+                    <div class="info-icon">
+                        <i class="fa-solid fa-info" style="color: #000;"></i>
+                    </div>
+                    <p class="">Plus de 500 logements sont disponibles dans cette ville</p>
+                </div>
+                <!-- dream accommodation more then text  -->
+            </div>
+
+
+        </div>
+    </header>
+    
+    <!-- Start Dream Accommodation Area -->
+    <section class="dream-accommodation-area">
+        <div class="container">
+            
+                <!-- Main Body: start dream accommodation main content  -->
+                <div class="dream-accommodation-main-content">
+
+                    <!-- accommodation marseilles content -->
+                    <section id="hebergements" class="accommodation-marseilles-content">
+                        <div class="single-accommodation-marseilles-content">
+                            <div class="dream-accommodation-main-heading">
+                                <h2>Hébergements à Marseille</h2>
+                            </div>
+
+                            <div class="desktop-accommodation-marseilles-items">
+                                <div class="accommodation-marseilles-items">
+
+                                    <!-- single items -->
+                                    <article class="single-accommodation-marseilles-items">
+                                        <a class="single-accommodation-marseilles-link" href="#">
+                                            <div class="single-accommodation-marseilles-image-item">
+                                                <img src="assets/images/hebergements/hotel-du-port.jpg" alt="Image">
+                                            </div>
+                                            <div class="single-accommodation-marseilles-text-review-items">
+                                                <div class="single-accommodation-marseilles-text-item">
+                                                    <h3>Hôtel du port</h3>
+                                                    <p>Nuit à partir de 52€</p>
+                                                </div>
+                                                <div class="single-accommodation-marseilles-review-item">
+                                                    <ul>
+                                                        <li><i class="fa-solid fa-star"></i></li>
+                                                        <li><i class="fa-solid fa-star"></i></li>
+                                                        <li><i class="fa-solid fa-star"></i></li>
+                                                        <li><i class="fa-solid fa-star"></i></li>
+                                                        <li><i class="fa-solid fa-star"></i></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </article>
+                                    <!-- single items -->
+
+                                    <!-- single items -->
+                                    <article class="single-accommodation-marseilles-items">
+                                        <a class="single-accommodation-marseilles-link" href="#">
+                                            <div class="single-accommodation-marseilles-image-item">
+                                                <img src="assets/images/hebergements/hotel-chez-amina.jpg" alt="Image">
+                                            </div>
+                                            <div class="single-accommodation-marseilles-text-review-items">
+                                                <div class="single-accommodation-marseilles-text-item">
+                                                    <h3>Hôtel Chez Amina</h3>
+                                                    <p>Nuit à partir de 96€</p>
+                                                </div>
+                                                <div class="single-accommodation-marseilles-review-item">
+                                                    <ul>
+                                                        <li><i class="fa-solid fa-star"></i></li>
+                                                        <li><i class="fa-solid fa-star"></i></li>
+                                                        <li><i class="fa-solid fa-star"></i></li>
+                                                        <li><i class="fa-solid fa-star"></i></li>
+                                                        <li><i class="fa-solid fa-star"></i></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </article>
+                                    <!-- single items -->
+
+                                    <!-- single items -->
+                                    <article class="single-accommodation-marseilles-items">
+                                        <a class="single-accommodation-marseilles-link" href="#">
+                                            <div class="single-accommodation-marseilles-image-item">
+                                                <img src="assets/images/hebergements/hotel-les-mouettes.jpg" alt="Image">
+                                            </div>
+                                            <div class="single-accommodation-marseilles-text-review-items">
+                                                <div class="single-accommodation-marseilles-text-item">
+                                                    <h3>Hôtel Les mouettes</h3>
+                                                    <p>Nuit à partir de 76€</p>
+                                                </div>
+                                                <div class="single-accommodation-marseilles-review-item">
+                                                    <ul>
+                                                        <li><i class="fa-solid fa-star"></i></li>
+                                                        <li><i class="fa-solid fa-star"></i></li>
+                                                        <li><i class="fa-solid fa-star"></i></li>
+                                                        <li><i class="fa-solid fa-star"></i></li>
+                                                        <li><i class="fa-solid fa-star"></i></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </article>
+                                    <!-- single items -->
+
+
+                                    <!-- single items -->
+                                    <article class="single-accommodation-marseilles-items">
+                                        <a class="single-accommodation-marseilles-link" href="#">
+                                            <div class="single-accommodation-marseilles-image-item">
+                                                <img src="assets/images/hebergements/hotel-de-la-mer.jpg" alt="Image">
+                                            </div>
+                                            <div class="single-accommodation-marseilles-text-review-items">
+                                                <div class="single-accommodation-marseilles-text-item">
+                                                    <h3>Hôtel de la mer</h3>
+                                                    <p>Nuit à partir de 46€</p>
+                                                </div>
+                                                <div class="single-accommodation-marseilles-review-item">
+                                                    <ul>
+                                                       <li><i class="fa-solid fa-star"></i></li>
+                                                       <li><i class="fa-solid fa-star"></i></li>
+                                                       <li><i class="fa-solid fa-star"></i></li>
+                                                       <li><i class="fa-solid fa-star"></i></li>
+                                                       <li><i class="fa-solid fa-star"></i></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </article>
+                                    <!-- single items -->
+
+                                    <!-- single items -->
+                                    <article class="single-accommodation-marseilles-items">
+                                        <a class="single-accommodation-marseilles-link" href="#">
+                                            <div class="single-accommodation-marseilles-image-item">
+                                                <img src="assets/images/hebergements/auberge-de-la-canebiere.jpg" alt="Image">
+                                            </div>
+                                            <div class="single-accommodation-marseilles-text-review-items">
+                                                <div class="single-accommodation-marseilles-text-item">
+                                                    <h3>Auberge La Canebière</h3>
+                                                    <p>Nuit à partir de 25€</p>
+                                                </div>
+                                                <div class="single-accommodation-marseilles-review-item">
+                                                    <ul>
+                                                       <li><i class="fa-solid fa-star"></i></li>
+                                                       <li><i class="fa-solid fa-star"></i></li>
+                                                       <li><i class="fa-solid fa-star"></i></li>
+                                                       <li><i class="fa-solid fa-star"></i></li>
+                                                       <li><i class="fa-solid fa-star"></i></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </a>    
+                                    </article>
+                                    <!-- single items -->
+
+                                    <!-- single items -->
+                                    <article class="single-accommodation-marseilles-items">
+                                        <a class="single-accommodation-marseilles-link" href="#">
+                                            <div class="single-accommodation-marseilles-image-item">
+                                                <img src="assets/images/hebergements/auberge-le-panier.jpg" alt="Image">
+                                            </div>
+                                            <div class="single-accommodation-marseilles-text-review-items">
+                                                <div class="single-accommodation-marseilles-text-item">
+                                                    <h3>Auberge Le Panier</h3>
+                                                    <p>Nuit à partir de 23€</p>
+                                                </div>
+                                                <div class="single-accommodation-marseilles-review-item">
+                                                    <ul>
+                                                        <li><i class="fa-solid fa-star"></i></li>
+                                                        <li><i class="fa-solid fa-star"></i></li>
+                                                        <li><i class="fa-solid fa-star"></i></li>
+                                                        <li><i class="fa-solid fa-star"></i></li>
+                                                        <li><i class="fa-solid fa-star"></i></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </article>
+                                    <!-- single items -->
+
+                                </div>
+                            </div>
+
+                            <div class="mobile-accommodation-marseilles-items">
+                                <div class="accommodation-marseilles-items">
+
+                                    <!-- single items -->
+                                    <article class="single-accommodation-marseilles-items">
+                                        
+                                        <a class="single-accommodation-marseilles-link" href="#">
+                                            <div class="single-accommodation-marseilles-image-item">
+                                                <img src="assets/images/hebergements/hotel-du-port.jpg" alt="Image">
+                                            </div>
+                                            <div class="single-accommodation-marseilles-text-review-items">
+                                                <div class="single-accommodation-marseilles-text-item">
+                                                    <h3>Hôtel du port</h3>
+                                                    <p>Nuit à partir de 52€</p>
+                                                </div>
+                                                <div class="single-accommodation-marseilles-review-item">
+                                                    <ul>
+                                                        <li><i class="fa-solid fa-star"></i></li>
+                                                        <li><i class="fa-solid fa-star"></i></li>
+                                                        <li><i class="fa-solid fa-star"></i></li>
+                                                        <li><i class="fa-solid fa-star"></i></li>
+                                                        <li><i class="fa-solid fa-star"></i></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                    </article>
+                                    <!-- single items -->
+
+                                    <!-- single items -->
+                                    <article class="single-accommodation-marseilles-items">
+                                        <a class="single-accommodation-marseilles-link" href="#">
+                                            <div class="single-accommodation-marseilles-image-item">
+                                                <img src="assets/images/hebergements/auberge-de-la-canebiere.jpg" alt="Image">
+                                            </div>
+                                            <div class="single-accommodation-marseilles-text-review-items">
+                                                <div class="single-accommodation-marseilles-text-item">
+                                                    <h3>Auberge La Canebière</h3>
+                                                    <p>Nuit à partir de 25€</p>
+                                                </div>
+                                                <div class="single-accommodation-marseilles-review-item">
+                                                    <ul>
+                                                       <li><i class="fa-solid fa-star"></i></li>
+                                                       <li><i class="fa-solid fa-star"></i></li>
+                                                       <li><i class="fa-solid fa-star"></i></li>
+                                                       <li><i class="fa-solid fa-star"></i></li>
+                                                       <li><i class="fa-solid fa-star"></i></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </a>    
+                                    </article>
+                                    <!-- single items -->
+
+                                    <!-- single items -->
+                                    <article class="single-accommodation-marseilles-items">
+                                        <a class="single-accommodation-marseilles-link" href="#">
+                                            <div class="single-accommodation-marseilles-image-item">
+                                                <img src="assets/images/hebergements/hotel-les-mouettes.jpg" alt="Image">
+                                            </div>
+                                            <div class="single-accommodation-marseilles-text-review-items">
+                                                <div class="single-accommodation-marseilles-text-item">
+                                                    <h3>Hôtel Les mouettes</h3>
+                                                    <p>Nuit à partir de 76€</p>
+                                                </div>
+                                                <div class="single-accommodation-marseilles-review-item">
+                                                    <ul>
+                                                        <li><i class="fa-solid fa-star"></i></li>
+                                                        <li><i class="fa-solid fa-star"></i></li>
+                                                        <li><i class="fa-solid fa-star"></i></li>
+                                                        <li><i class="fa-solid fa-star"></i></li>
+                                                        <li><i class="fa-solid fa-star"></i></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </article>
+                                    <!-- single items -->
+
+                                     <!-- single items -->
+                                    <article class="single-accommodation-marseilles-items">
+                                        <a class="single-accommodation-marseilles-link" href="#">
+                                            <div class="single-accommodation-marseilles-image-item">
+                                                <img src="assets/images/hebergements/hotel-de-la-mer.jpg" alt="Image">
+                                            </div>
+                                            <div class="single-accommodation-marseilles-text-review-items">
+                                                <div class="single-accommodation-marseilles-text-item">
+                                                    <h3>Hôtel de la mer</h3>
+                                                    <p>Nuit à partir de 46€</p>
+                                                </div>
+                                                <div class="single-accommodation-marseilles-review-item">
+                                                    <ul>
+                                                       <li><i class="fa-solid fa-star"></i></li>
+                                                       <li><i class="fa-solid fa-star"></i></li>
+                                                       <li><i class="fa-solid fa-star"></i></li>
+                                                       <li><i class="fa-solid fa-star"></i></li>
+                                                       <li><i class="fa-solid fa-star"></i></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </article>
+                                    <!-- single items -->
+
+                                    <!-- single items -->
+                                    <article class="single-accommodation-marseilles-items">
+                                        <a class="single-accommodation-marseilles-link" href="#">
+                                            <div class="single-accommodation-marseilles-image-item">
+                                                <img src="assets/images/hebergements/auberge-le-panier.jpg" alt="Image">
+                                            </div>
+                                            <div class="single-accommodation-marseilles-text-review-items">
+                                                <div class="single-accommodation-marseilles-text-item">
+                                                    <h3>Auberge Le Panier</h3>
+                                                    <p>Nuit à partir de 23€</p>
+                                                </div>
+                                                <div class="single-accommodation-marseilles-review-item">
+                                                    <ul>
+                                                        <li><i class="fa-solid fa-star"></i></li>
+                                                        <li><i class="fa-solid fa-star"></i></li>
+                                                        <li><i class="fa-solid fa-star"></i></li>
+                                                        <li><i class="fa-solid fa-star"></i></li>
+                                                        <li><i class="fa-solid fa-star"></i></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </article>
+                                    <!-- single items -->
+
+                                    <!-- single items -->
+                                    <article class="single-accommodation-marseilles-items">
+                                        <a class="single-accommodation-marseilles-link" href="#">
+                                            <div class="single-accommodation-marseilles-image-item">
+                                                <img src="assets/images/hebergements/hotel-chez-amina.jpg" alt="Image">
+                                            </div>
+                                            <div class="single-accommodation-marseilles-text-review-items">
+                                                <div class="single-accommodation-marseilles-text-item">
+                                                    <h3>Hôtel Chez Amina</h3>
+                                                    <p>Nuit à partir de 96€</p>
+                                                </div>
+                                                <div class="single-accommodation-marseilles-review-item">
+                                                    <ul>
+                                                        <li><i class="fa-solid fa-star"></i></li>
+                                                        <li><i class="fa-solid fa-star"></i></li>
+                                                        <li><i class="fa-solid fa-star"></i></li>
+                                                        <li><i class="fa-solid fa-star"></i></li>
+                                                        <li><i class="fa-solid fa-star"></i></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </article>
+                                    <!-- single items -->
+
+                                </div>
+                            </div>
+                           
+
+
+
+
+
+                            <!-- accommodatioin show more btn -->
+                            <div class="accommodation-marseilles-show-more-btn">
+                                <a href="#">Afficher plus</a>
+                            </div>
+
+                        </div>
+                    </section>
+                    <!-- accommodation marseilles content -->
+
+                    <!-- most popular content -->
+                    <section class="most-popular-content">
+                        <div class="single-accommodation-marseilles-content">
+                            <div class="dream-accommodation-main-heading">
+                                <h2>Les plus populaires</h2>
+                                <i class="fa-solid fa-chart-line" style="color: #0065FC;"></i>
+                            </div>
+
+                            <div class="most-popular-items">
+
+                                <!-- single items -->
+                                <article class="single-most-popular-items">
+                                    <a class="single-most-popular-items-link" href="#">
+                                        <div class="single-most-popular-image-item">
+                                            <img src="assets/images/hebergements/emile-guillemot.jpg" alt="Image">
+                                        </div>
+                                        <div class="single-most-popular-text-review-items">
+                                            <div class="single-most-popular-text-item">
+                                                <h3 class="les-plus-desktop">Auberge la Canebière</h3>
+                                                <h3 class="les-plus-mobile">Hôtel Le soleil du matin</h3>
+                                                <p>Nuit à partir de <span class="les-plus-desktop">25€</span><span class="les-plus-mobile">128€</span></p>
+                                            </div>
+                                            <div class="single-most-popular-review-item">
+                                                <ul>
+                                                   <li><i class="fa-solid fa-star"></i></li>
+                                                   <li><i class="fa-solid fa-star"></i></li>
+                                                   <li><i class="fa-solid fa-star"></i></li>
+                                                   <li><i class="fa-solid fa-star"></i></li>
+                                                   <li><i class="fa-solid fa-star"></i></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </article>
+                                <!-- single items -->
+
+                                <!-- single items -->
+                                <article class="single-most-popular-items">
+                                    <a class="single-most-popular-items-link" href="#">
+                                        <div class="single-most-popular-image-item">
+                                            <img src="assets/images/hebergements/aw-creative.jpg" alt="Image">
+                                        </div>
+                                        <div class="single-most-popular-text-review-items">
+                                            <div class="single-most-popular-text-item">
+                                                <h3>Chambres d’hôtes Au cœur de l’eau </h3>
+                                                <p>Nuit à partir de 71€</p>
+                                            </div>
+                                            <div class="single-most-popular-review-item">
+                                                <ul>
+                                                   <li><i class="fa-solid fa-star"></i></li>
+                                                   <li><i class="fa-solid fa-star"></i></li>
+                                                   <li><i class="fa-solid fa-star"></i></li>
+                                                   <li><i class="fa-solid fa-star"></i></li>
+                                                   <li><i class="fa-solid fa-star"></i></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </article>
+                                <!-- single items -->
+
+                                <!-- single items -->
+                                <article class="single-most-popular-items">
+                                    <a class="single-most-popular-items-link" href="#">
+                                        <div class="single-most-popular-image-item">
+                                            <img src="assets/images/hebergements/hotel-bleu-et-blanc.jpg" alt="Image">
+                                        </div>
+                                        <div class="single-most-popular-text-review-items">
+                                            <div class="single-most-popular-text-item">
+                                                <h3>Hôtel Bleu et Blanc </h3>
+                                                <p>Nuit à partir de 68<span>€</span></p>
+                                            </div>
+                                            <div class="single-most-popular-review-item">
+                                                <ul>
+                                                    <li><i class="fa-solid fa-star"></i></li>
+                                                    <li><i class="fa-solid fa-star"></i></li>
+                                                    <li><i class="fa-solid fa-star"></i></li>
+                                                    <li><i class="fa-solid fa-star"></i></li>
+                                                    <li><i class="fa-solid fa-star"></i></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </article>
+                                <!-- single items -->
+
+
+                            </div>
+
+                        </div>
+                    </section>
+                    <!-- most popular content -->
+
+                </div>
+                <!-- dream accommodation main content  -->
+            </div>
+        </div>
+    </section>
+    <!-- End Dream Accommodation Area -->
+
+    <!-- Start Activities Marseilles Area -->
+    <section id="activites" class="activities-marseilles-area">
+        <div class="container">
+            <div class="activities-marseilles-heading">
+                <h2>Activités à Marseille</h2>
+            </div>
+            <div class="activities-marseilles-content">
+
+                <!-- single content -->
+                <a class="single-activities-marseilles-content" href="#">
+                    <div class="single-activities-marseilles-img-content">
+                        <img src="assets/images/activites/vieux-port.jpg" alt="Image">
+                    </div>
+                    <div class="single-activities-marseilles-headtext-content">
+                        <h3>Vieux-Port</h3>
+                    </div>
+                </a>
+                <!-- single content -->
+
+                <!-- single content -->
+                <a class="single-activities-marseilles-content" href="#">
+                    <div class="single-activities-marseilles-img-content">
+                        <img src="assets/images/activites/fort-de-pomegues.jpg" alt="Image">
+                    </div>
+                    <div class="single-activities-marseilles-headtext-content">
+                       <h3>Fort de Pomègues</h3>
+                    </div>                    
+                </a>
+                <!-- single content -->
+
+                <!-- single content -->
+                <a class="single-activities-marseilles-content" href="#">
+                    <div class="single-activities-marseilles-img-content">
+                        <img src="assets/images/activites/parc-national-des-calanques.jpg" alt="Image">
+                    </div>
+                    <div class="single-activities-marseilles-headtext-content">
+                       <h3>Parc national des Calanques</h3>
+                    </div>
+                </a>
+                <!-- single content -->
+
+                <!-- single content -->
+                <a class="single-activities-marseilles-content" href="#">
+                    <div class="single-activities-marseilles-img-content">
+                        <img src="assets/images/activites/notre-dame-de-la-garde.jpg" alt="Image">
+                    </div>
+                    <div class="single-activities-marseilles-headtext-content">
+                        <h3>Notre-Dame-de-la-Garde</h3>
+                    </div>
+                </a>
+                <!-- single content -->
+
+            </div>
+        </div>
+    </section>
+    <!-- End Activities Marseilles Area -->
+
+
+    <!-- Start Footer Area  -->
+    <footer class="footer-area">
+        <div class="container">
+            <div class="footer-content">
+
+                <!-- single content -->
+                <div class="single-footer-content">
+                    <h2>À propos</h2>
+                    <ul>
+                        <li><a href="#">Fonctionnement du site</a></li>
+                        <li><a href="#">Conditions générales </a></li>
+                        <li><a href="#">Données et confidentialité</a></li>
+                    </ul>
+                </div>
+                <!-- single content -->
+
+                <!-- single content -->
+                <div class="single-footer-content">
+                    <h2>Nos hébergements</h2>
+                    <ul>
+                        <li><a href="#">Charte qualité</a></li>
+                        <li><a href="#">Proposer votre hôtel</a></li>
+                    </ul>
+                </div>
+                <!-- single content -->
+
+                <!-- single content -->
+                <div class="single-footer-content">
+                    <h2>Assistance</h2>
+                    <ul>
+                        <li><a href="#">Centre d’aide</a></li>
+                        <li><a href="#">Nous contacter</a></li>
+                    </ul>
+                </div>
+                <!-- single content -->
+
+
+
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer Area  -->
+
+
+
+</body>
+
+</html>

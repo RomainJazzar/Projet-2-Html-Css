@@ -1,0 +1,870 @@
+:root {
+  --color-black: #000000;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+input,
+button,
+textarea,
+select {
+  outline: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a,
+span {
+  display: inline-block;
+  text-decoration: none;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 22px;
+  color: var(--color-black);
+  text-transform: inherit;
+  line-height: 26px;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 18px;
+  color: #000000;
+  text-transform: inherit;
+  line-height: 22px;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 16px;
+  color: #000000;
+  text-transform: inherit;
+  line-height: normal;
+}
+
+p {
+  font-weight: 400;
+  font-size: 16px;
+  color: #000000;
+  text-transform: inherit;
+  line-height: 22px;
+}
+
+.container {
+  max-width: 1340px;
+  width: 100%;
+  padding: 0 50px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* Start Header Area Css */
+
+.header-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.header-logo img,
+.header-logo-content a img {
+  width: 62px;
+  height: auto;
+}
+
+.header-nav-menu ul,
+.header-menu-content ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header-nav-menu ul li,
+.header-menu-content ul li {
+  border-top: 2px solid transparent;
+  padding: 15px 0px 8px;
+  margin-left: 70px;
+}
+
+.header-nav-menu ul li:hover,
+.header-nav-menu ul li.active,
+.header-menu-content ul li:hover,
+.header-menu-content ul li.active {
+  border-top: 2px solid #0065FC;
+}
+
+.header-nav-menu ul li:hover a,
+.header-nav-menu ul li.active a {
+  color: #0065FC;
+}
+
+.header-nav-menu ul li a {
+  font-weight: 400;
+  font-size: 16px;
+  color: #000000;
+  text-transform: capitalize;
+  line-height: 1.2;
+  transition: .3s;
+}
+
+.info-icon {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #DDD;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.info-icon i {
+  font-size: 13px;
+}
+
+.dream-accommodation-content,
+.dream-accommodation-heading-text {
+  padding-top: 60px;
+}
+
+/* End Header Area Css */
+
+/* Start Dream Accommodation Area Css */
+
+.dream-accommodation-heading-text h1 {
+  margin-bottom: 8px;
+}
+
+.dream-accommodation-research {
+  margin: 35px 0;
+}
+
+.dream-accommodation-research form {
+  display: flex;
+  flex-direction: row;
+}
+
+.location-icon-content {
+  background: #F2F2F2;
+  padding: 15px 20px;
+  border-top-left-radius: 13px;
+  border-bottom-left-radius: 13px;
+}
+
+.location-icon-content img {
+  height: 18px;
+  width: auto;
+}
+
+.location-input-field input {
+  font-weight: 700;
+  font-size: 18px;
+  color: #000000;
+  text-transform: capitalize;
+  line-height: 1.2;
+  padding: 14px 15px;
+  border: none;
+  border-top: 1px solid #F2F2F2;
+  border-bottom: 1px solid #F2F2F2;
+  width: 170px;
+  text-align: center;
+}
+
+.research-submit-button input,
+.research-submit-button button {
+  font-weight: 700;
+  font-size: 18px;
+  color: #FFFFFF;
+  text-transform: capitalize;
+  line-height: 1.1;
+  border: none;
+  background: #0065FC;
+  padding: 16px 18px;
+  border-top-right-radius: 13px;
+  border-bottom-right-radius: 13px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.responsive {
+  display: none;
+}
+
+/* .research-submit-button button {
+  display: none;
+} */
+
+.research-submit-button input:hover,
+.research-submit-button button:hover {
+  background: #DEEBFF;
+  color: #000000;
+}
+
+.dream-accommodation-filters-btn,
+.dream-accommodation-filters,
+.dream-accommodation-more-then-text {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.dream-accommodation-filters-btn i {
+  margin-right: 7px;
+}
+
+.dream-accommodation-filters-btn button {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  color: #000000;
+  text-transform: inherit;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: transparent;
+  border: 2px solid #D9D9D9;
+  padding: 12px 15px;
+  margin-left: 15px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.dream-accommodation-filters-btn button img {
+  margin-right: 13px;
+}
+
+.dream-accommodation-filters-btn button:hover {
+  background: #DEEBFF;
+}
+
+.dream-accommodation-more-then-text {
+  margin: 35px 0;
+}
+
+.dream-accommodation-more-then-text img {
+  width: 24px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.dream-accommodation-main-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.accommodation-marseilles-content {
+  flex: 0 0 67%;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+
+.most-popular-content {
+  flex: 0 0 33%;
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+
+.dream-accommodation-main-heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.dream-accommodation-main-heading img {
+  width: 18px;
+  height: auto;
+}
+
+.single-accommodation-marseilles-content {
+  background: #F2F2F2;
+  padding: 30px 30px;
+  border-radius: 15px;
+  height: 100%;
+}
+
+.dream-accommodation-main-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.accommodation-marseilles-content {
+  flex: 0 0 67%;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+
+.most-popular-content {
+  flex: 0 0 33%;
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+
+.dream-accommodation-main-heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.dream-accommodation-main-heading img {
+  width: 18px;
+  height: auto;
+}
+
+.single-accommodation-marseilles-content {
+  background: #F2F2F2;
+  padding: 30px 30px;
+  border-radius: 15px;
+  height: 100%;
+}
+
+.single-accommodation-marseilles-items,
+.single-most-popular-items {
+  background: #FFFFFF;
+  padding: 5px;
+  border-radius: 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.single-most-popular-items {
+  margin-bottom: 30px;
+}
+
+.single-accommodation-marseilles-text-review-items {
+  padding: 10px;
+}
+
+.mobile-accommodation-marseilles-items {
+  display: none;
+}
+
+.accommodation-marseilles-items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.single-accommodation-marseilles-items {
+  flex: 0 0 30%;
+  margin-bottom: 30px;
+}
+
+.single-accommodation-marseilles-image-item {
+  overflow: hidden;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.single-accommodation-marseilles-image-item img {
+  width: 100%;
+  height: 125px;
+  object-fit: cover;
+  transition: linear .3s;
+}
+
+.single-accommodation-marseilles-link {
+  display: block;
+}
+
+.single-accommodation-marseilles-link:hover .single-accommodation-marseilles-image-item img {
+  transform: scale(1.2);
+}
+
+.single-most-popular-text-item h3 {
+  border-bottom: 1px solid transparent;
+  display: inline-block;
+  transition: linear .3s;
+}
+
+.single-accommodation-marseilles-text-item h3 {
+  border-bottom: 1px solid transparent;
+  display: inline-block;
+  transition: linear .3s;
+}
+
+.single-accommodation-marseilles-link:hover .single-accommodation-marseilles-text-item h3 {
+  color: blue;
+  border-bottom: 1px solid blue;
+}
+
+.single-accommodation-marseilles-text-item p,
+.single-most-popular-text-item p {
+  font-size: 14px;
+  margin-top: 5px;
+  margin-bottom: 2px;
+}
+
+.single-accommodation-marseilles-review-item ul,
+.single-most-popular-review-item ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.single-accommodation-marseilles-review-item ul li i,
+.single-most-popular-review-item ul li i {
+  font-size: 14px;
+  color: #0065FC;
+}
+
+.single-most-popular-review-item ul li i {
+  font-size: 12px;
+}
+
+.single-accommodation-marseilles-review-item ul li:last-child i,
+.single-most-popular-review-item ul li:last-child i {
+  color: #F2F2F2;
+}
+
+.accommodation-marseilles-show-more-btn a {
+  font-weight: 700;
+  font-size: 18px;
+  color: #000000;
+  text-transform: inherit;
+  line-height: 1.1;
+  transition: .3s;
+}
+
+.accommodation-marseilles-show-more-btn a:hover {
+  color: #0065FC;
+  text-decoration: underline;
+}
+
+.single-most-popular-items-link {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.most-popular-items .single-most-popular-items:last-child {
+  margin-bottom: 0;
+}
+
+.single-most-popular-image-item {
+  flex: 0 0 35%;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.single-most-popular-text-review-items {
+  flex: 0 0 65%;
+  box-sizing: border-box;
+}
+
+.single-most-popular-text-review-items {
+  padding: 10px 15px 5px;
+  min-height: 145px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.single-most-popular-image-item {
+  overflow: hidden;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.single-most-popular-image-item img {
+  height: 100%;
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: .3s;
+}
+
+.single-most-popular-items-link:hover .single-most-popular-image-item img {
+  transform: scale(1.2);
+}
+
+.single-most-popular-text-item h3 {
+  border-bottom: 1px solid transparent;
+  display: inline-block;
+  transition: linear .3s;
+}
+
+.single-most-popular-items-link:hover .single-most-popular-text-item h3 {
+  color: blue;
+  border-bottom: 1px solid blue;
+}
+
+h3.les-plus-mobile,
+span.les-plus-mobile {
+  display: none;
+}
+
+.single-accommodation-marseilles-image-item img {
+  width: 100%;
+  height: 125px;
+  object-fit: cover;
+  transition: linear .3s;
+}
+
+.single-accommodation-marseilles-link {
+  display: block;
+}
+
+.single-accommodation-marseilles-link:hover .single-accommodation-marseilles-image-item img {
+  transform: scale(1.2);
+}
+
+.single-most-popular-text-item h3 {
+  border-bottom: 1px solid transparent;
+  display: inline-block;
+  transition: linear .3s;
+}
+
+.single-accommodation-marseilles-text-item h3 {
+  border-bottom: 1px solid transparent;
+  display: inline-block;
+  transition: linear .3s;
+}
+
+.single-accommodation-marseilles-link:hover .single-accommodation-marseilles-text-item h3 {
+  color: blue;
+  border-bottom: 1px solid blue;
+}
+
+.single-accommodation-marseilles-text-item p,
+.single-most-popular-text-item p {
+  font-size: 14px;
+  margin-top: 5px;
+  margin-bottom: 2px;
+}
+
+.single-accommodation-marseilles-review-item ul,
+.single-most-popular-review-item ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.single-accommodation-marseilles-review-item ul li i,
+.single-most-popular-review-item ul li i {
+  font-size: 14px;
+  color: #0065FC;
+}
+
+.single-most-popular-review-item ul li i {
+  font-size: 12px;
+}
+
+.single-accommodation-marseilles-review-item ul li:last-child i,
+.single-most-popular-review-item ul li:last-child i {
+  color: #F2F2F2;
+}
+
+.accommodation-marseilles-show-more-btn a {
+  font-weight: 700;
+  font-size: 18px;
+  color: #000000;
+  text-transform: inherit;
+  line-height: 1.1;
+  transition: .3s;
+}
+
+.accommodation-marseilles-show-more-btn a:hover {
+  color: #0065FC;
+  text-decoration: underline;
+}
+
+.single-most-popular-items-link {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.most-popular-items .single-most-popular-items:last-child {
+  margin-bottom: 0;
+}
+
+.single-most-popular-image-item {
+  flex: 0 0 35%;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.single-most-popular-text-review-items {
+  flex: 0 0 65%;
+  box-sizing: border-box;
+}
+
+.single-most-popular-text-review-items {
+  padding: 10px 15px 5px;
+  min-height: 145px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.single-most-popular-image-item {
+  overflow: hidden;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.single-most-popular-image-item img {
+  height: 100%;
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: .3s;
+}
+
+.single-most-popular-items-link:hover .single-most-popular-image-item img {
+  transform: scale(1.2);
+}
+
+.single-most-popular-text-item h3 {
+  border-bottom: 1px solid transparent;
+  display: inline-block;
+  transition: linear .3s;
+}
+
+.single-most-popular-items-link:hover .single-most-popular-text-item h3 {
+  color: blue;
+  border-bottom: 1px solid blue;
+}
+
+h3.les-plus-mobile,
+span.les-plus-mobile {
+  display: none;
+}
+
+/* .footer-area {
+  padding: 60px 0;
+  background-color: #F9F9F9;
+} */
+
+.single-footer-widget {
+  margin-bottom: 30px;
+}
+
+.single-footer-widget h3 {
+  font-weight: 700;
+  font-size: 16px;
+  color: #000000;
+  text-transform: inherit;
+  line-height: normal;
+  margin-bottom: 15px;
+}
+
+.footer-widget-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer-widget-list li {
+  margin-bottom: 10px;
+}
+
+.footer-widget-list li:last-child {
+  margin-bottom: 0;
+}
+
+.footer-widget-list li a {
+  font-weight: 400;
+  font-size: 14px;
+  color: #707070;
+  text-transform: inherit;
+  line-height: 1.8;
+  transition: .3s;
+  display: block;
+}
+
+.footer-widget-list li a:hover {
+  color: #0065FC;
+}
+
+.single-footer-widget .newsletter-form {
+  position: relative;
+}
+
+.single-footer-widget .newsletter-form input[type="email"] {
+  width: 100%;
+  border: 1px solid #E2E2E2;
+  padding: 12px 15px;
+  border-radius: 30px;
+  background-color: transparent;
+}
+
+.single-footer-widget .newsletter-form button[type="submit"] {
+  background-color: #0065FC;
+  border: none;
+  color: #FFFFFF;
+  padding: 12px 25px;
+  border-radius: 30px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.single-footer-widget .newsletter-form button[type="submit"]:hover {
+  background-color: #DEEBFF;
+  color: #000000;
+}
+
+/* End Dream Accommodation Area Css */
+
+/* Start Activities Marseilles Area Css */
+
+.activities-marseilles-area {
+  padding: 65px 0;
+}
+
+/* .activities-marseilles-area .container {
+  padding: 0 75px;
+} */
+
+.activities-marseilles-heading h1,
+.activities-marseilles-heading h2 {
+  margin-bottom: 30px;
+}
+
+.activities-marseilles-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.activities-marseilles-content article {
+  flex: 0 0 23%;
+  border-radius: 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.single-activities-marseilles-img-content {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  overflow: hidden;
+}
+
+.single-activities-marseilles-img-content img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  transition: .3s;
+}
+
+.single-activities-marseilles-content {
+  display: block;
+}
+
+.single-activities-marseilles-content:hover .single-activities-marseilles-img-content img {
+  transform: scale(1.2);
+}
+
+.single-activities-marseilles-headtext-content {
+  padding: 20px;
+}
+
+.single-activities-marseilles-headtext-content h3 {
+  border-bottom: 1px solid transparent;
+  display: inline-block;
+  transition: linear .3s;
+}
+
+.single-activities-marseilles-content:hover .single-activities-marseilles-headtext-content h3 {
+  color: blue;
+  border-bottom: 1px solid blue;
+}
+
+/* End Activities Marseilles Area Css */
+
+/* Start Footer Area Css */
+
+.footer-content {
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.single-footer-content {
+  flex: 0 0 33.33%;
+  padding: 20px 20px;
+  box-sizing: border-box;
+  background: #F2F2F2;
+  min-height: 175px;
+}
+
+.single-footer-content .single-footer-title {
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.single-footer-content ul li a {
+  font-weight: 400;
+  font-size: 16px;
+  color: #000000;
+  text-transform: inherit;
+  line-height: 2;
+  transition: .3s;
+}
+
+.single-footer-content ul li a:hover {
+  color: #0065FC;
+  text-decoration: underline;
+}
+
+/* End Footer Area Css */

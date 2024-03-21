@@ -1,0 +1,264 @@
+@media all and (max-width: 1199px) {
+	.activities-marseilles-content article {
+		min-height: 335px;
+	}
+
+	.single-activities-marseilles-img-content img {
+		height: 250px;
+	}
+
+	.accommodation-marseilles-content {
+		flex: 0 0 100%;
+		padding-right: 0;
+	}
+
+	.most-popular-content {
+		flex: 0 0 100%;
+		padding-left: 0;
+		margin-top: 50px;
+	}
+
+	.most-popular-items {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	.single-most-popular-items {
+		margin-bottom: 0;
+		flex: 0 0 30%;
+	}
+
+	h3.les-plus-mobile,
+	span.les-plus-mobile {
+		display: block;
+	}
+
+	h3.les-plus-desktop,
+	span.les-plus-desktop {
+		display: none;
+	}
+
+}
+
+@media all and (max-width: 991px) {
+	.container {
+		padding: 0 25px;
+	}
+
+	.dream-accommodation-filters {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.dream-accommodation-filters h2 {
+		margin-bottom: 20px;
+	}
+
+	.dream-accommodation-filters-btn button {
+		margin-left: 0;
+		margin-right: 15px;
+	}
+
+	.single-activities-marseilles-img-content img {
+		height: 200px;
+	}
+
+	.activities-marseilles-content article {
+		min-height: 290px;
+	}
+
+	.activities-marseilles-area .container {
+		padding: 0 25px;
+	}
+
+
+}
+
+@media all and (max-width: 767px) {
+	.single-accommodation-marseilles-items {
+		flex: 0 0 45%;
+	}
+
+	.single-most-popular-items {
+		flex: 0 0 46%;
+		margin-bottom: 20px;
+	}
+
+	.activities-marseilles-content {
+		flex-wrap: wrap;
+	}
+
+	.activities-marseilles-content article {
+		flex: 0 0 48%;
+		margin-bottom: 20px;
+		min-height: inherit;
+	}
+
+	.single-footer-content {
+		flex: 0 0 50%;
+		min-height: auto;
+	}
+
+	.dream-accommodation-filters-btn button {
+		flex: 0 0 34%;
+		margin-top: 15px;
+	}
+
+	.dream-accommodation-filters h2 {
+		margin-bottom: 5px;
+	}
+
+	.research-submit-button input {
+		display: none;
+	}
+
+	.research-submit-button button {
+		display: block;
+		border-radius: 15px;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	}
+
+	.footer-content {
+		background: #F2F2F2;
+	}
+
+	.responsive {
+		display: block;
+	}
+
+	.computer {
+		display: none;
+	}
+
+
+}
+
+@media all and (max-width: 575px) {
+	.desktop-accommodation-marseilles-items {
+		display: none;
+	}
+
+	.mobile-accommodation-marseilles-items {
+		display: block;
+	}
+
+	.header-content {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.header-nav-menu ul li,
+	.header-menu-content ul li {
+		flex: 0 0 50%;
+		text-align: center;
+		margin-left: 0;
+		border-bottom: 2px solid #F2F2F2;
+	}
+
+	.header-nav-menu ul li:hover,
+	.header-nav-menu ul li.active,
+	.header-menu-content ul li.active,
+	.header-menu-content ul li:hover {
+		color: #0065FC;
+		border-top: none;
+		border-bottom: 2px solid #0065FC;
+	}
+
+	.header-menu-content {
+		flex: 0 0 100%;
+		width: 100%;
+	}
+
+	.header-logo-content {
+		padding: 30px 0;
+	}
+
+	.container,
+	.dream-accommodation-heading-text,
+	.dream-accommodation-research,
+	.dream-accommodation-filters,
+	.dream-accommodation-more-then-text {
+		padding: 0 20px;
+	}
+
+	.dream-accommodation-more-then-text {
+		flex-wrap: nowrap;
+	}
+
+	.dream-accommodation-main-content {
+		flex-direction: column-reverse;
+	}
+
+	.most-popular-content {
+		margin-top: 0;
+	}
+
+	.single-most-popular-items {
+		flex: 0 0 100%;
+	}
+
+	.single-accommodation-marseilles-content {
+		padding: 30px 20px;
+		border-radius: 0;
+	}
+
+	.dream-accommodation-area .container {
+		padding: 0;
+	}
+
+	.single-accommodation-marseilles-items,
+	.single-footer-content,
+	.activities-marseilles-content article {
+		flex: 0 0 100%;
+		box-sizing: border-box;
+	}
+
+	.dream-accommodation-filters-btn button {
+		flex: 0 0 42%;
+	}
+
+	.single-accommodation-marseilles-items {
+		margin-bottom: 20px;
+	}
+
+	.dream-accommodation-content,
+	.dream-accommodation-heading-text {
+		padding-top: 25px;
+	}
+
+	.header-area .container {
+		padding: 0;
+	}
+
+
+
+
+}
+
+@media all and (max-width: 450px) {
+
+	.location-input-field input {
+		width: 150px;
+	}
+
+	.dream-accommodation-filters-btn button {
+		font-size: 14px;
+	}
+
+	.dream-accommodation-filters-btn button img {
+		margin-right: 8px;
+	}
+
+}
+
+
+@media all and (max-width: 390px) {
+
+	.dream-accommodation-filters-btn button {
+		flex: 0 0 100%;
+		justify-content: center;
+		margin-right: 0;
+	}
+}
